@@ -24,9 +24,22 @@ main{
     align-items: center;
 }
 
-section{
+#all{
+    display: flex;
     background-color: var(--cor5);
-    width: 900px;
-    height: 600px;
+    width: 1000px;
+    height: 650px;
     border-radius: 20px;
+}
+
+#all > #content{
+    padding: 30px;
+}
+
+#image{
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    width: 410px;
+    height: 595px;
+    margin: 15px;
 }
