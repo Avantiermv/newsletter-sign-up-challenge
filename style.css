@@ -27,12 +27,11 @@ main{
     align-items: center;
 }
 
-#all{
-    display: none;
-    /*display: flex;*/
+#all{ 
+    display: flex;
     background-color: var(--cor5);
     width: 1000px;
-    height: 650px;
+    height: 630px;
     border-radius: 20px;
 }
 
@@ -67,7 +66,12 @@ input{
     height: 50px;
     border-radius: 10px;
     border-style: solid;
-    border-color: black;
+    border-color: var(--cor4);
+}
+
+input:hover{
+    border-color: hsl(240, 10%, 13%);
+    transition: 0.3s;
 }
 
 button{
@@ -95,6 +99,7 @@ button:hover{
 }
 
 #thanks{
+    display: none;
     width: 440px;
     height: 490px;
     background-color: var(--cor5);
@@ -114,4 +119,61 @@ button:hover{
 #thanks > button{
     margin: auto;
     width: 340px;
+}
+
+@media (max-width: 600px){
+    #all{
+        display: block;
+        width: 375px;
+        height: 800px;
+        
+    }
+
+    #image{
+       display: none;
+    }
+
+    #mobileimg{
+        background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+        width: 375px;
+        height: 283px;
+        margin: auto;
+    }
+
+    #all > #content{
+        padding: 0px;
+    }
+
+    #content > h1{
+        font-size: 2em;
+    }
+
+    #content > #p1{
+        font-size: 1.2em;
+    }
+
+    #content > #otherp{
+        font-size: 1em;
+    }
+
+    #emailbutton{
+        margin: 18px;
+        padding: 0px;
+    }
+
+    #emailbutton > input{
+        width: 330px;
+    }
+
+    #emailbutton > button{
+        width: 330px;
+    }
+
+    #thanks{
+        width: 360px;
+    }
+
+    #thanks > button{
+        margin-left: 10px;
+    }
 }
