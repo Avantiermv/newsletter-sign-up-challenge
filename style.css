@@ -28,7 +28,8 @@ main{
 }
 
 #all{
-    display: flex;
+    display: none;
+    /*display: flex;*/
     background-color: var(--cor5);
     width: 1000px;
     height: 650px;
@@ -57,7 +58,32 @@ main{
 #emailbutton{
     margin: 30px;
     padding: 5px;
+}
 
+input{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 430px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+button{
+    font-size: 16px;
+    width: 437px;
+    height: 55px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--cor2);
+    color: var(--cor5);
+}
+
+button:hover{
+    background-color: var(--cor1);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 #image{
@@ -66,4 +92,10 @@ main{
     width: 485px;
     height: 595px;
     margin: 15px;
+}
+
+#thanks{
+    width: 500px;
+    height: 550px;
+    background-color: var(--cor5);
 }
