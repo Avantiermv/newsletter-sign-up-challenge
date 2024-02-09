@@ -69,7 +69,7 @@ input{
     border-color: var(--cor4);
 }
 
-input:hover{
+ input:hover{
     border-color: hsl(240, 10%, 13%);
     transition: 0.3s;
 }
@@ -169,6 +169,14 @@ button:hover{
         width: 330px;
     }
 
+    input{
+        width: 325px;
+    }
+
+    button{
+        width: 325px;
+    }
+    
     #thanks{
         width: 360px;
     }
