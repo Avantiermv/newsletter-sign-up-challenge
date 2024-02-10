@@ -74,6 +74,13 @@ input{
     transition: 0.3s;
 }
 
+span{
+    display: none;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-left: 330px;
+}
+
 button{
     font-size: 16px;
     width: 437px;
@@ -117,7 +124,7 @@ button:hover{
 }
 
 #thanks > button{
-    margin: auto;
+    margin-left: 50px;
     width: 340px;
 }
 
@@ -154,6 +161,10 @@ button:hover{
 
     #content > #otherp{
         font-size: 1em;
+    }
+
+    span{
+        margin-left: 220px;
     }
 
     #emailbutton{
